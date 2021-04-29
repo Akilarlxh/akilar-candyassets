@@ -1,0 +1,15 @@
+{
+  "name": "akilar-candyassets",
+  "version": "1.0.1",
+  "description": "Akilarの糖果屋的图床仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "akilar",
+    "candyhome"
+  ],
+  "author": "akilar",
+  "license": "ISC"
+}
