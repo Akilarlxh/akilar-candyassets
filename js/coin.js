@@ -1,5 +1,11 @@
 var tipButtons = document.querySelectorAll('.tip-button')
 
+function coinAudio() {
+  var coinAudio = document.getElementById("coinAudio");
+  if (coinAudio) {
+    coinAudio.play();//有音频时播放
+  }
+}
 // Loop through all buttons (allows for multiple buttons on page)
 tipButtons.forEach((button) => {
   var coin = button.querySelector('.coin')
@@ -8,8 +14,8 @@ tipButtons.forEach((button) => {
   coin.maxMoveLoopCount = 90
 
   button.addEventListener('click', () => {
+    if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true; //媒体选择
     if (button.clicked) return
-
     button.classList.add('clicked')
 
     // Wait to start flipping th coin because of the button tilt animation
@@ -19,6 +25,7 @@ tipButtons.forEach((button) => {
       coin.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI
       button.clicked = true
       flipCoin()
+      coinAudio()
     }, 50)
   })
 
