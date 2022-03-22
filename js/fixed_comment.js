@@ -41,10 +41,10 @@ function FixedCommentBtn(){
   // 若不存在评论区则跳转至留言板
   else{
       if (pjax){
-        pjax.loadUrl("/comment/#post-comment");
+        pjax.loadUrl("/comments/#post-comment");
       }
       else{
-        window.location.href = "/comment/#post-comment";
+        window.location.href = "/comments/#post-comment";
       }
   }
 }
