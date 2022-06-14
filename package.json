@@ -1,6 +1,6 @@
 {
   "name": "akilar-candyassets",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "Akilarの糖果屋的静态资源仓库",
   "main": "index.js",
   "scripts": {
